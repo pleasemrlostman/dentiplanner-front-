@@ -40,11 +40,11 @@ pnpm install
 
 ### 2. 개발 서버 실행
 
-`lab` 애플리케이션의 개발 서버를 실행하려면:
+애플리케이션의 개발 서버를 실행하려면:
 
-```bash
-pnpm --filter lab dev
-```
+`build:clinic` clinic dev 실행
+
+`build:lab` lab dev 실행
 
 ### 3. 빌드
 
