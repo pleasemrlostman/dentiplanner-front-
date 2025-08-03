@@ -1,4 +1,5 @@
 {
+  "name": "dentiplanner-front",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -11,6 +12,5 @@
     "prettier": "^3.2.5",
     "turbo": "^2.5.5"
   },
-  "packageManager": "pnpm@8.15.6",
-  "name": "with-vite-react"
+  "packageManager": "pnpm@8.15.6"
 }
