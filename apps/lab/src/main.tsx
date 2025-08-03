@@ -3,6 +3,7 @@ import "@repo/ui/styles.css";
 import "./style.css";
 import { Card } from "@repo/ui/card";
 import { Gradient } from "@repo/ui/gradient";
+import { Title } from "@repo/ui/title";
 import { TurborepoLogo } from "@repo/ui/turborepo-logo";
 
 const LINKS = [
@@ -31,15 +32,8 @@ const LINKS = [
 
 const App = () => (
   <main className="flex flex-col items-center justify-between min-h-screen p-24">
-    <TurborepoLogo />
-    <div className="grid mb-32 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-      {LINKS.map(({ title, href, description }) => (
-        <Card href={href} key={title} title={title}>
-          {description}
-        </Card>
-      ))}
-    </div>
-    {/* <div className="z-10 items-center justify-between w-full max-w-5xl font-mono text-sm lg:flex">
+    <Title title="Welcome to Lab Page" />
+    <div className="z-10 items-center justify-between w-full max-w-5xl font-mono text-sm lg:flex">
       <p className="fixed top-0 left-0 flex justify-center w-full px-4 pt-8 pb-6 border backdrop-blur-2xl border-neutral-800 from-inherit lg:static lg:w-auto lg:rounded-xl lg:p-4">
         examples/with-tailwind -&nbsp;
         <code className="font-mono font-bold">docs</code>
@@ -100,7 +94,7 @@ const App = () => (
           {description}
         </Card>
       ))}
-    </div> */}
+    </div>
   </main>
 );
 

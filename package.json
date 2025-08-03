@@ -3,7 +3,11 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "build:clinic": "turbo run build --filter=clinic",
+    "build:lab": "turbo run build --filter=lab",
     "dev": "turbo run dev",
+    "dev:clinic": "turbo run dev --filter=clinic",
+    "dev:lab": "turbo run dev --filter=lab",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
